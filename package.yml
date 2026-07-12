@@ -1,12 +1,11 @@
 package: community.lazycat.app.nowen-reader
-version: 1.0.0
+version: 1.0.9
 name: NowenReader
 description: "Lightweight, local-first manga/doujinshi management and reading platform"
 min_os_version: 1.5.0
 license: MIT
 homepage: https://github.com/cropflre/nowen-reader
 author: cropflre
-
 locales:
   en:
     name: "Nowen Reader"

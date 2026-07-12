@@ -5,11 +5,11 @@ application:
   upstreams:
     - location: /
       backend: http://nowen-reader:3000/
-
 services:
   nowen-reader:
     # cropflre/nowen-reader:v1.0.0
-    image: registry.lazycat.cloud/czyt/cropflre/nowen-reader:53ff4c452950cb94
+    # upstream: cropflre/nowen-reader:v1.0.9
+    image: registry.lazycat.cloud/czyt/cropflre/nowen-reader:f55f8cac7d5c2a58
     environment:
       - GIN_MODE=release
       - DATABASE_URL=/data/nowen-reader.db
