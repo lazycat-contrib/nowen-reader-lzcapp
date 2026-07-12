@@ -20,7 +20,7 @@ application:
 
 services:
   nowen-reader:
-    # cropflre/nowen-reader:latest
+    # cropflre/nowen-reader:v1.0.0
     image: registry.lazycat.cloud/czyt/cropflre/nowen-reader:53ff4c452950cb94
     environment:
       - GIN_MODE=release
