@@ -1,0 +1,32 @@
+version: 1
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/nowen-reader.lpk
+update:
+  strategy: publish
+  allow_downgrade: false
+  version_source:
+    type: image
+    image: nowen-reader
+build:
+  run_buildscript: false
+images:
+  - id: nowen-reader
+    target: service
+    service: nowen-reader
+    source: cropflre/nowen-reader
+    channel: stable
+    tag_regex: '^v?[0-9]+\.[0-9]+\.[0-9]+$'
+    delivery:
+      mode: lazycat
+stores:
+  official:
+    enabled: true
+    skip_if_version_exists: true
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: Nowen Reader
+    summary: 轻量、本地优先的漫画与同人志管理阅读平台

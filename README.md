@@ -1,5 +1,7 @@
 # NowenReader - 懒猫应用
 
+每天定时检查 NowenReader 稳定版本，并支持 `v*` tag 和手动触发懒猫官方商店与喵喵私有商店发布。
+
 轻量开源、本地化优先的漫画/同人志管理与阅读一体化工具。
 
 ## 📖 应用简介
@@ -45,7 +47,8 @@ lzc-cli app install NowenReader-1.0.0.lpk
 
 ```
 nowen-reader-lzcapp/
-├── lzc-manifest.yml   # 应用清单
+├── package.yml        # LPK v2 应用元数据
+├── lzc-manifest.yml   # 应用运行清单
 ├── lzc-build.yml      # 构建配置
 ├── build.sh           # 自动化脚本
 ├── icon.png           # 应用图标 (需准备)
@@ -119,7 +122,7 @@ lzc-cli appstore login
 
 ```bash
 # 1. 更新版本号
-# 编辑 lzc-manifest.yml 中的 version 字段
+# 编辑 package.yml 中的 version 字段
 
 # 2. 重新发布
 ./build.sh one-click
