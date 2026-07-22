@@ -1,5 +1,5 @@
 package: community.lazycat.app.nowen-reader
-version: 1.0.11
+version: 1.0.12
 name: NowenReader
 description: "Lightweight, local-first manga/doujinshi management and reading platform"
 min_os_version: 1.5.0
