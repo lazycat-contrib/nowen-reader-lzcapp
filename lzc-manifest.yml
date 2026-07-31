@@ -8,8 +8,8 @@ application:
 services:
   nowen-reader:
     # cropflre/nowen-reader:v1.0.0
-    # upstream: cropflre/nowen-reader:v1.0.13
-    image: registry.lazycat.cloud/czyt/cropflre/nowen-reader:6977c94f2d1e864c
+    # upstream: cropflre/nowen-reader:v1.0.14
+    image: registry.lazycat.cloud/czyt/cropflre/nowen-reader:85c85a5e2354dc22
     environment:
       - GIN_MODE=release
       - DATABASE_URL=/data/nowen-reader.db
