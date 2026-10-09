@@ -3,7 +3,7 @@ version: 1.2.0
 name: NowenReader
 description: "Lightweight, local-first manga/doujinshi management and reading platform"
 min_os_version: 1.5.0
-license: MIT
+license: GPL-3.0
 homepage: https://github.com/cropflre/nowen-reader
 author: cropflre
 locales:
